@@ -1,5 +1,7 @@
 <?php
 
+// La classe bdConnect permet la connexion à la base de données grâce à sa fonction connexion
+// La fonction connexion prend en paramètres les informations de connexion à la base de données
 class bdConnect{
 
     public $conn;
