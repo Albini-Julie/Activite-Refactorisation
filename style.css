@@ -1,0 +1,48 @@
+body {
+    
+}
+
+h1 {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.button{
+    background-color: blue;
+    border: none;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Alfa Slab One', sans-serif;
+}
+
+.button::before{
+
+}
+
+#toggle {
+    display: none;
+}
+
+.phrase-initiale {
+    display: block;
+    cursor: pointer;
+}
+
+.phrase-alternative {
+    display: none;
+}
+
+#toggle:checked~.phrase-alternative {
+    display: block;
+}
