@@ -5,20 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un Pokémon</title>
+    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
+    <h1 class="pokemon__title">Modifier un pokémon</h1>
+    <h2 class="pokemon__subtitle">Modifiez un pokémon de votre pokédex !</h2>
+    <!--Bouton de retour vers la page d'accueil-->
+    <div class="pokemon__bloc --button">
+        <a href="../index.html"><button>Accueil</button></a>
+    </div>
     <!-- Formulaire pour entrer les informations du Pokémon -->
     <form method="POST" action="">
-        <label>Entrez l'ID du pokémon que vous voulez modifier :</label>
-        <input type="text" name="pokemon_id_new" placeholder="ID du Pokémon" required>
-        <label>Entrez le nouveau nom de votre Pokémon :</label>
-        <label>Entrez le nouvel ID du pokémon :</label>
-        <input type="text" name="pokemon_id" placeholder="ID du Pokémon" required>
-        <input type="text" name="pokemon_name" placeholder="Nom du Pokémon" required>
-        <label>Entrez le nouveau type de votre Pokémon :</label>
-        <input type="text" name="pokemon_type" placeholder="Type du Pokémon" required>
-        <button type="submit">Modifier</button>
+        <!--Champs pour entrer l'id du pokemon à modifier-->
+        <div class="pokemon__bloc">
+            <label>Entrez l'ID du pokémon que vous voulez modifier :</label>
+            <input type="text" name="pokemon_id_new" placeholder="ID du Pokémon" required>
+        </div>
+        <!--Champs pour entrer le nouveau nom du pokemon-->
+        <div class="pokemon__bloc">
+            <label>Entrez le nouveau nom de votre Pokémon :</label>
+            <input type="text" name="pokemon_name" placeholder="Nom du Pokémon" required>
+        </div>
+        <!--Champs pour entrer le nouvel id du pokemon-->
+        <div class="pokemon__bloc">
+            <label>Entrez le nouvel ID du pokémon :</label>
+            <input type="text" name="pokemon_id" placeholder="ID du Pokémon" required>
+        </div>
+        <!--Champs pour entrer le nouveau type du pokemon-->
+        <div class="pokemon__bloc">
+                <label>Entrez le type de votre Pokémon :</label>
+                <div>
+                    <input type="radio" id="Feu" name="pokemon_type" value="Feu" required />
+                    <label for="Feu">Feu</label>
+                </div>
+                <div>
+                    <input type="radio" id="Eau" name="pokemon_type" value="Eau" required/>
+                    <label for="Eau">Eau</label>
+                </div>
+                <div>
+                    <input type="radio" id="Electrique" name="pokemon_type" value="Electrique" required/>
+                    <label for="Electrique">Electrique</label>
+                </div>
+                <div>
+                    <input type="radio" id="Vole" name="pokemon_type" value="Vole" required/>
+                    <label for="Vole">Vole</label>
+                </div>
+                <div>
+                    <input type="radio" id="Psy" name="pokemon_type" value="Psy" required />
+                    <label for="Psy">Psy</label>
+                </div>
+        <!--Bouton pour confirmer la modification du pokemon-->
+        <div class="pokemon__bloc --button">
+            <button type="submit">Modifier</button>
+        </div>
     </form>
 
     <?php

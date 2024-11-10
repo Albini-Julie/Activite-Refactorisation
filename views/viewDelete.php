@@ -5,14 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suppression Pokémon</title>
+    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-
+        <h1 class="pokemon__title">Supprimer un pokémon</h1>
+        <h2 class="pokemon__subtitle">Supprimez un pokémon de votre pokédex !</h2>
+        <!--Bouton de retour vers la page d'accueil-->
+        <div class="pokemon__bloc --button">
+            <a href="../index.html"><button>Accueil</button></a>
+        </div>
     <!-- Formulaire pour entrer l'ID du Pokémon -->
     <form method="POST" action="">
-        <label>Entrez l'ID du pokémon que vous voulez supprimer :</label>
-        <input type="text" name="pokemon_id" placeholder="ID du Pokémon" required>
-        <button type="submit">Supprimer</button>
+        <!--Champs pour entrer l'id du pokemon à supprimer-->
+        <div class="pokemon__bloc">
+            <label>Entrez l'ID du pokémon que vous voulez supprimer :</label>
+            <input type="text" name="pokemon_id" placeholder="ID du Pokémon" required>
+        </div>
+        <!--Bouton pour confirmer la suppression du pokemon-->
+        <div class="pokemon__bloc --button">
+            <button class="pokemon__delete" type="submit">Supprimer</button>
+        </div>
     </form>
 
     <?php
