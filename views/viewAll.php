@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des pokémons</title>
     <!-- Lien vers la feuille de style CSS -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
 </head>
 
-<body>
+<body class="pokemon">
   <h1 class="pokemon__title">Voici la liste de tous les pokémons que tu possédes :</h1>
   <!--Bouton de retour vers la page d'accueil-->
   <div class="pokemon__bloc --button">

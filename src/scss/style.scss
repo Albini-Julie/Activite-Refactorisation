@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+}
+
+.pokemon{
+
+    /* Titres */
+    &__title {
+        color: #00921B;
+        text-align: center;
+        font-family: 'Jersey 10';
+        font-size: 80px;
+        margin-bottom: 0px;
+    }
+    
+
+    &__subtitle{
+        color: #00921B;
+        text-align: center;
+        font-family: 'JetBrains Mono';
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Contenus */
+    &__name{
+        color: #00921B;
+        font-family: 'Jersey 10';
+        font-size: 35px;
+        margin: 0;
+        &.--erreur{
+            margin-left: 50px;
+        }
+    }
+
+    &__type{
+        color: white;
+        font-family: 'JetBrains Mono';
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__bloc{
+        display: flex;
+        align-items: end;
+        gap: 20px;
+        margin-left: 50px;
+        margin-top: 10px;
+        &:last-child{
+            margin-bottom: 50px;
+        }
+        &.--button{
+            margin-top: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__delete{
+        background-color: red;
+        color: white;
+        box-shadow: 5px 5px 5px rgb(110, 0, 0);
+        &:hover{
+            background-color: white;
+            color: red;
+            border: solid 2px red;
+        }
+    }
+}
+
+/* Boutons */
+
+button {
+    background-color: #00921B;
+    color: black;
+    font-size: 25px;
+    font-family: "Jersey 10";
+    border: none;
+    box-shadow: 5px 5px 5px #005c11;
+    cursor: pointer;
+    border: solid 2px transparent;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    background-color: black;
+    color: #00921B;
+    border: solid 2px #005c11;
+}
+
+/* Boutons radios */
+
+input[type="radio"] {
+    accent-color: #005c11;
+}
+
+/* Liens */
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Jersey 10';
+    &:hover {
+        text-decoration: none;
+        color: #00921B;
+        font-size: 25px;
+        font-family: 'Jersey 10';
+    }
+}
+
+/* Listes */
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s linear;
+    &:hover{
+        transform: translateX(20px);
+        transition: 0.2s linear;
+    }
+    &::before {
+        content: url('../arrow.png');
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+}
+
+/* Formulaire */
+
+form {
+    margin-left: 50px;
+}
+
+label {
+    color: white;
+    font-family: 'JetBrains Mono';
+    font-size: 15px;
+    min-width: 450px;
+}
+
+input {
+    border: solid 1px #00921B;
+    background-color: black;
+    color: #00921B;
+    padding: 5px 10px;
+    font-family: 'Jersey 10';
+    font-size: 20px;
+    margin: 0px 20px;
+    transition: 0.2s ease-in;
+    &:hover{
+        border: solid 1px white;
+    }
+    &:focus-visible {
+        border: solid 1px white;
+        outline: none;
+    }
+}

@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Créer un Pokémon</title>
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../public/css/style.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
             rel="stylesheet">
     </head>
-    <body>
+    <body class="pokemon">
         <h1 class="pokemon__title">Ajouter un pokémon</h1>
         <h2 class="pokemon__subtitle">Ajoutez un pokémon à votre pokédex !</h2>
         <!--Bouton de retour vers la page d'accueil-->
